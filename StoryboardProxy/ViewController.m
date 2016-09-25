@@ -25,5 +25,26 @@
 	// Dispose of any resources that can be recreated.
 }
 
+- (IBAction)france {
+	[self dismissViewControllerAnimated:true completion:nil];
+	NSLog(@"I see london I see france, I see your under pants");
+}
+
+@end
+
+
+@implementation RedViewController
+
+- (IBAction)thing:(id)sender {
+	[self dismissViewControllerAnimated:true completion:nil];
+}
+
+@end
+
+@implementation UIViewController (Dismiss)
+
+- (IBAction)dismissViewController:(id)sender {
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

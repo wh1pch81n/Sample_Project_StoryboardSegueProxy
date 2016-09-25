@@ -13,3 +13,6 @@
 
 @end
 
+@interface RedViewController: UIViewController
+
+@end

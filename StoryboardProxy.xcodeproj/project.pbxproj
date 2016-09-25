@@ -13,6 +13,8 @@
 		7F3482931D975A77003378F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3482911D975A77003378F7 /* Main.storyboard */; };
 		7F3482951D975A77003378F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F3482941D975A77003378F7 /* Assets.xcassets */; };
 		7F3482981D975A77003378F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3482961D975A77003378F7 /* LaunchScreen.storyboard */; };
+		7F3482A11D975AC5003378F7 /* StoryboardSegueProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3482A01D975AC5003378F7 /* StoryboardSegueProxy.m */; };
+		7F3482A41D97651F003378F7 /* CustomModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3482A31D97651F003378F7 /* CustomModal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		7F3482941D975A77003378F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F3482971D975A77003378F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F3482991D975A77003378F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F34829F1D975AC5003378F7 /* StoryboardSegueProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardSegueProxy.h; sourceTree = "<group>"; };
+		7F3482A01D975AC5003378F7 /* StoryboardSegueProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardSegueProxy.m; sourceTree = "<group>"; };
+		7F3482A21D97651F003378F7 /* CustomModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomModal.h; sourceTree = "<group>"; };
+		7F3482A31D97651F003378F7 /* CustomModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomModal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				7F34828C1D975A77003378F7 /* AppDelegate.m */,
 				7F34828E1D975A77003378F7 /* ViewController.h */,
 				7F34828F1D975A77003378F7 /* ViewController.m */,
+				7F3482A21D97651F003378F7 /* CustomModal.h */,
+				7F3482A31D97651F003378F7 /* CustomModal.m */,
+				7F34829F1D975AC5003378F7 /* StoryboardSegueProxy.h */,
+				7F3482A01D975AC5003378F7 /* StoryboardSegueProxy.m */,
 				7F3482911D975A77003378F7 /* Main.storyboard */,
 				7F3482941D975A77003378F7 /* Assets.xcassets */,
 				7F3482961D975A77003378F7 /* LaunchScreen.storyboard */,
@@ -153,6 +163,8 @@
 				7F3482901D975A77003378F7 /* ViewController.m in Sources */,
 				7F34828D1D975A77003378F7 /* AppDelegate.m in Sources */,
 				7F34828A1D975A77003378F7 /* main.m in Sources */,
+				7F3482A11D975AC5003378F7 /* StoryboardSegueProxy.m in Sources */,
+				7F3482A41D97651F003378F7 /* CustomModal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
