@@ -40,8 +40,8 @@
 @property (weak, nonatomic) IBOutlet id<UIViewControllerAnimatedTransitioning> presentingAnimator;
 @property (weak, nonatomic) IBOutlet id<UIViewControllerAnimatedTransitioning> dismissingAnimator;
 
-@property (weak, nonatomic) IBOutlet UIPercentDrivenInteractiveTransition *presentingInteractiveTransition;
-@property (weak, nonatomic) IBOutlet UIPercentDrivenInteractiveTransition *dismissingInteractiveTransition;
+@property (weak, nonatomic) UIPercentDrivenInteractiveTransition *presentingInteractiveTransition;
+@property (weak, nonatomic) UIPercentDrivenInteractiveTransition *dismissingInteractiveTransition;
 
 
 @end

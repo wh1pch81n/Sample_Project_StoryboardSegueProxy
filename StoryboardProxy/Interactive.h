@@ -11,8 +11,8 @@
 
 @interface Interactive : UIPercentDrivenInteractiveTransition
 
-@property (assign, nonatomic) IBInspectable BOOL isPresenting;
 @property (weak, nonatomic) IBOutlet StoryboardSegueProxy *storyboardSegueProxy;
 
+- (void)dismissPan:(UIPanGestureRecognizer *)sender;
 
 @end

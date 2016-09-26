@@ -29,7 +29,7 @@
 
 - (void)segueToPresentedViewcontroller {
 	UIViewController *presentedVC = [self presentedViewController];
-	UIStoryboardSegue *segue = [[UIStoryboardSegue alloc] initWithIdentifier:nil source:_presentingVC destination:presentedVC];
+	UIStoryboardSegue *segue = [[UIStoryboardSegue alloc] initWithIdentifier:_storyboardID source:_presentingVC destination:presentedVC];
 	[_presentingVC prepareForSegue:segue sender:self];
 	[_presentingVC showViewController:presentedVC sender:self];
 }

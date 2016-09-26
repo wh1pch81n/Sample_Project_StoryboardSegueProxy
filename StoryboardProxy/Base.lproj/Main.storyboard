@@ -135,6 +135,9 @@
                             <outletCollection property="gestureRecognizers" destination="LY3-tb-lcK" appends="YES" id="emT-MW-L9k"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="rightInteractive" destination="aSr-9Q-mnu" id="p03-u8-q6Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <customObject id="zUG-a4-xTE" customClass="StoryboardSegueProxy">
@@ -349,6 +352,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.28686752241345581" blue="0.9511626391705571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9O-C1-v66" userLabel="First Responder" sceneMemberID="firstResponder"/>
