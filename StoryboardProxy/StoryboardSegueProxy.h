@@ -12,7 +12,7 @@
  This object is meant to be used in a storyboard.  Add it to the scene dock of your presenting view controller.
  Connect the presenting view controller to the presentingVC property.
  */
-@interface StoryboardSegueProxy : NSObject
+@interface StoryboardSegueProxy : NSObject <UIViewControllerTransitioningDelegate>
 
 /** name of storyboard that presented view controller lives in. default value is "Main".   */
 @property (strong, nonatomic) IBInspectable NSString *storyboardName;
@@ -39,6 +39,10 @@
 
 @property (weak, nonatomic) IBOutlet id<UIViewControllerAnimatedTransitioning> presentingAnimator;
 @property (weak, nonatomic) IBOutlet id<UIViewControllerAnimatedTransitioning> dismissingAnimator;
+
+@property (weak, nonatomic) IBOutlet UIPercentDrivenInteractiveTransition *presentingInteractiveTransition;
+@property (weak, nonatomic) IBOutlet UIPercentDrivenInteractiveTransition *dismissingInteractiveTransition;
+
 
 @end
 

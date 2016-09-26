@@ -8,10 +8,6 @@
 
 #import "StoryboardSegueProxy.h"
 
-@interface StoryboardSegueProxy () <UIViewControllerTransitioningDelegate>
-
-@end
-
 @implementation StoryboardSegueProxy
 
 - (instancetype)init {
@@ -50,6 +46,14 @@
 	return _dismissingAnimator;
 }
 
+- (id<UIViewControllerInteractiveTransitioning>)interactionControllerForPresentation:(id<UIViewControllerAnimatedTransitioning>)animator
+{
+	return _presentingInteractiveTransition;
+}
 
+- (id<UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id<UIViewControllerAnimatedTransitioning>)animator
+{
+	return _dismissingInteractiveTransition;
+}
 
 @end

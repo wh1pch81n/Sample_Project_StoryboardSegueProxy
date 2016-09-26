@@ -130,6 +130,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="LY3-tb-lcK" appends="YES" id="emT-MW-L9k"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -141,7 +145,7 @@
                         <outlet property="presentingVC" destination="BYZ-38-t0r" id="IVF-yw-ddZ"/>
                     </connections>
                 </customObject>
-                <customObject id="JqP-sd-9bL" userLabel="Top" customClass="StoryboardSegueProxy">
+                <customObject id="JqP-sd-9bL" userLabel="⬆️ Top" customClass="StoryboardSegueProxy">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="storyboardID" value="top"/>
                     </userDefinedRuntimeAttributes>
@@ -151,7 +155,7 @@
                         <outlet property="presentingVC" destination="BYZ-38-t0r" id="OC8-5p-BP4"/>
                     </connections>
                 </customObject>
-                <customObject id="H1C-zf-wxx" userLabel="Bottom" customClass="StoryboardSegueProxy">
+                <customObject id="H1C-zf-wxx" userLabel="⬇️ Bottom" customClass="StoryboardSegueProxy">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="storyboardID" value="bottom"/>
                     </userDefinedRuntimeAttributes>
@@ -161,7 +165,7 @@
                         <outlet property="presentingVC" destination="BYZ-38-t0r" id="DwM-bF-TdM"/>
                     </connections>
                 </customObject>
-                <customObject id="Ug2-3B-G6D" userLabel="Left" customClass="StoryboardSegueProxy">
+                <customObject id="Ug2-3B-G6D" userLabel="⬅️ Left" customClass="StoryboardSegueProxy">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="storyboardID" value="left"/>
                     </userDefinedRuntimeAttributes>
@@ -171,7 +175,7 @@
                         <outlet property="presentingVC" destination="BYZ-38-t0r" id="VRH-4V-e2H"/>
                     </connections>
                 </customObject>
-                <customObject id="3TU-i3-17H" userLabel="Right" customClass="StoryboardSegueProxy">
+                <customObject id="3TU-i3-17H" userLabel="➡️ Right" customClass="StoryboardSegueProxy">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="storyboardID" value="right"/>
                     </userDefinedRuntimeAttributes>
@@ -181,29 +185,29 @@
                         <outlet property="presentingVC" destination="BYZ-38-t0r" id="VTU-ma-2me"/>
                     </connections>
                 </customObject>
-                <customObject id="oKV-zW-mcT" userLabel="Top Animator Presenting" customClass="CustomModalAnimator">
+                <customObject id="oKV-zW-mcT" userLabel="⬆️🌞Top Animator Presenting" customClass="CustomModalAnimator">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="direction">
                             <integer key="value" value="1"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </customObject>
-                <customObject id="9Im-mj-EJ0" userLabel="Bottom Animator Presenting" customClass="CustomModalAnimator"/>
-                <customObject id="ez9-Ht-9Uj" userLabel="Left Animator Presenting" customClass="CustomModalAnimator">
+                <customObject id="9Im-mj-EJ0" userLabel="⬇️🌞Bottom Animator Presenting" customClass="CustomModalAnimator"/>
+                <customObject id="ez9-Ht-9Uj" userLabel="⬅️🌞 Left Animator Presenting" customClass="CustomModalAnimator">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="direction">
                             <integer key="value" value="2"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </customObject>
-                <customObject id="T8X-or-rhg" userLabel="Right Animator Presenting" customClass="CustomModalAnimator">
+                <customObject id="T8X-or-rhg" userLabel="➡️🌞Right Animator Presenting" customClass="CustomModalAnimator">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="direction">
                             <integer key="value" value="3"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </customObject>
-                <customObject id="1NY-Wt-At7" userLabel="Top Animator Dismissing" customClass="CustomModalAnimator">
+                <customObject id="1NY-Wt-At7" userLabel="⬆️🌛Top Animator Dismissing" customClass="CustomModalAnimator">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isPresenting" value="NO"/>
                         <userDefinedRuntimeAttribute type="number" keyPath="direction">
@@ -211,12 +215,12 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </customObject>
-                <customObject id="0Iu-KF-cGT" userLabel="Bottom Animator Dismissing" customClass="CustomModalAnimator">
+                <customObject id="0Iu-KF-cGT" userLabel="⬇️🌛Bottom Animator Dismissing" customClass="CustomModalAnimator">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isPresenting" value="NO"/>
                     </userDefinedRuntimeAttributes>
                 </customObject>
-                <customObject id="DhS-Cu-zyi" userLabel="Left Animator Dismissing" customClass="CustomModalAnimator">
+                <customObject id="DhS-Cu-zyi" userLabel="⬅️🌛Left Animator Dismissing" customClass="CustomModalAnimator">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isPresenting" value="NO"/>
                         <userDefinedRuntimeAttribute type="number" keyPath="direction">
@@ -224,7 +228,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </customObject>
-                <customObject id="win-qd-HGp" userLabel="Right Animator Dismissing" customClass="CustomModalAnimator">
+                <customObject id="win-qd-HGp" userLabel="➡️🌛 Right Animator Dismissing" customClass="CustomModalAnimator">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isPresenting" value="NO"/>
                         <userDefinedRuntimeAttribute type="number" keyPath="direction">
@@ -232,6 +236,16 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </customObject>
+                <customObject id="aSr-9Q-mnu" userLabel="Right Interactive Presenting" customClass="Interactive">
+                    <connections>
+                        <outlet property="storyboardSegueProxy" destination="3TU-i3-17H" id="1Jp-m5-mkk"/>
+                    </connections>
+                </customObject>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="LY3-tb-lcK">
+                    <connections>
+                        <action selector="pan:" destination="aSr-9Q-mnu" id="ZK8-WI-Zj9"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-158" y="18"/>
         </scene>
